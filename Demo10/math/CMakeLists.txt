@@ -26,6 +26,7 @@ message(STATUS "project source dir is ${PROJECT_SOURCE_DIR}")
 
 message(STATUS "system name is ${CMAKE_SYSTEM_NAME}")
 
+# 根据操作系统，安装到不同的文件夹
 if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 set(INSTALL_PATH ${PROJECT_SOURCE_DIR}/dist/windows)
 elseif(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
