@@ -10,10 +10,10 @@
 * demo2 构建多个源文件，单目录
 * demo3 添加子目录
 * demo4 添加增配置文件,是否USE_MYMATH
-* demo5 添加增install和测试(宏函数)
+* demo5 添加install和测试(宏函数)
 * demo6 添加检查系统是否支持pow函数
 * demo7 添加CPack 变量
 * demo8添加 增构建CPack安装包
-* demo9
+* demo9 添加同时生成静态库和动态库 并安装到指定文件夹
 * demo10
 * demo11
