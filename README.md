@@ -16,6 +16,6 @@
 * demo8添加 增构建CPack安装包
 * demo9 添加同时生成静态库和动态库 并安装到指定文件夹
 * demo10 根据操作系统，安装到不同的文件夹
-* demo11
+* demo11 自定义find module, 并使用find_package寻找
 * demo12 设置交叉编译(Linux环境中成功，Windows失败)
 * demo13 list的用法
