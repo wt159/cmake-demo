@@ -1,18 +1,11 @@
-# the name of the target operating system
-SET(CMAKE_SYSTEM_NAME Windows)
+# 1. mkdir build && cd build
+# 2. cmake .. --no-warn-unused-cli -Wno-dev -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_TOOLCHAIN_FILE=%cd%\..\win_mingw_tool.cmake -G "MinGW Makefiles"
+# 3. mingw32-make
 
 # which compilers to use for C and C++
-set(TOOL_DIR C:/msys64/mingw64/bin)
-SET(CMAKE_C_COMPILER ${TOOL_DIR}/gcc)
-SET(CMAKE_CXX_COMPILER ${TOOL_DIR}/g++)
-SET(CMAKE_RC_COMPILER ${TOOL_DIR}/windres)
+set(CMAKE_C_COMPILER "F:/Qt/Qt5.14.2/Tools/mingw730_64/bin/gcc.exe")
+set(CMAKE_CXX_COMPILER "F:/Qt/Qt5.14.2/Tools/mingw730_64/bin/g++.exe")
 
-# here is the target environment located
-SET(CMAKE_FIND_ROOT_PATH ${TOOL_DIR}/../)
-
-# adjust the default behaviour of the FIND_XXX() commands:
-# search headers and libraries in the target environment, search
-# programs in the host environment
-set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
-set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
-set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+# 设置编译选项
+set(CMAKE_C_FLAGS "-Wall")
+set(CMAKE_CXX_FLAGS "-Wall")
